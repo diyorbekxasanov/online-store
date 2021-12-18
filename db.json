@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "lastName": "Xasanov",
+      "name": "Diyor",
+      "phone": "995520297",
+      "email": "diyorxasanov@mail.ru",
+      "password": "1234562234244",
+      "id": 1
+    },
+    {
+      "lastName": "Xasanov",
+      "name": "Diyor",
+      "phone": "995520297",
+      "email": "diyorxasanov@mail.ru",
+      "password": "1234562234244",
+      "id": 1
+    },
+    {
+      "lastName": "Diyor",
+      "name": "Xasa",
+      "phone": "",
+      "email": "dsds@mail.ru",
+      "password": "1234343545545",
+      "id": 2
+    },
+    {
+      "lastName": "Xasanov",
+      "name": "Diyor",
+      "phone": "995520297",
+      "email": "diyorxasanov@mail.ru",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "lastName": "Eshboyev",
+      "name": "Bekzod",
+      "phone": "932474636",
+      "email": "begzodeshboyev1021@mail.ru",
+      "password": "1234567890",
+      "id": 4
+    }
+  ],
+  "product":[
+    {
+      "id":"1",
+      "name":"mean"
+    }
+  ]
+}
