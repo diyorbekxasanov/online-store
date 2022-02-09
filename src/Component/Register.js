@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { connect, useDispatch, useSelector } from 'react-redux';
+import { connect } from 'react-redux';
 import { GetAction, AddAction } from '../reducers/reducer/reducer';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,7 +11,7 @@ function Register({ GetAction, AddAction }) {
     
     useEffect(() => {
         GetAction()
-    }, [])
+    })
 
     const getUsers = (event) => {
         event.preventDefault()

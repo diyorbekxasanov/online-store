@@ -8,10 +8,9 @@ function Login({ GetAction }) {
     const [user, setUser] = useState([])
     const [value, setValue] = useState('password')
     const select = useSelector(state => state.PushUser.usersData)
-    console.log(select);
     useEffect(() => {
         GetAction()
-    }, [])
+    })
     function getUser(event) {
         event.preventDefault()
         setUser({
