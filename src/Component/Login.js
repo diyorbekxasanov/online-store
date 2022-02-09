@@ -10,7 +10,7 @@ function Login({ GetAction }) {
     const select = useSelector(state => state.PushUser.usersData)
     useEffect(() => {
         GetAction()
-    })
+    }, [])
     function getUser(event) {
         event.preventDefault()
         setUser({
@@ -60,8 +60,8 @@ function Login({ GetAction }) {
                                 <input type="text" placeholder="Name" className="form-control mb-2" />
                                 {/* <label htmlFor="password">Password</label> */}
                                 <div className="input-group mb-3">
-                                    <input type={value} className="form-control" placeholder={"password"} style={{position:"relative"}} />
-                                    <img onClick={typeBtn} src={value === "password" ? "/assets/yopiq.png" : "/assets/ochiq.png"} alt="" className='mb-1' style={{position:"absolute",right:"10px",top:"10px", zIndex:"999"}} />
+                                    <input type={value} className="form-control" placeholder={"password"} style={{ position: "relative" }} />
+                                    <img onClick={typeBtn} src={value === "password" ? "/assets/yopiq.png" : "/assets/ochiq.png"} alt="" className='mb-1' style={{ position: "absolute", right: "10px", top: "10px", zIndex: "999" }} />
                                 </div>
                             </form>
                         </div>

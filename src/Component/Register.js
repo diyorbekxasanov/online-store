@@ -8,10 +8,10 @@ function Register({ GetAction, AddAction }) {
     const [email, setEmail] = useState('')
     const [pas, setPas] = useState('')
     const [value, setValue] = useState('password')
-    
+
     useEffect(() => {
         GetAction()
-    })
+    }, [])
 
     const getUsers = (event) => {
         event.preventDefault()
@@ -68,8 +68,8 @@ function Register({ GetAction, AddAction }) {
                                 <input type="text" placeholder="Email" className="form-control mt-3" required />
                                 <span className='text-danger m-0' style={{ fontSize: "12px" }}>{email} </span>
                                 <div className="input-group mb-3 mt-3">
-                                    <input type={value} className="form-control" placeholder={"password"} style={{position:"relative"}} />
-                                    <img onClick={typeBtn} src={value === "password" ? "/assets/yopiq.png" : "/assets/ochiq.png"} alt="" className='mb-1' style={{position:"absolute",right:"10px",top:"10px", zIndex:"999"}} />
+                                    <input type={value} className="form-control" placeholder={"password"} style={{ position: "relative" }} />
+                                    <img onClick={typeBtn} src={value === "password" ? "/assets/yopiq.png" : "/assets/ochiq.png"} alt="" className='mb-1' style={{ position: "absolute", right: "10px", top: "10px", zIndex: "999" }} />
                                 </div>
                                 <span className='text-danger m-0' style={{ fontSize: "12px" }}>{pas} </span>
                             </form>
